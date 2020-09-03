@@ -1,3 +1,5 @@
+Mobile Stock (React Native/Firebase)
+
 [![Build Status](https://travis-ci.org/HTFML/chinese-poker.svg?branch=master)](https://travis-ci.org/HTFML/chinese-poker)
 
 &nbsp;
