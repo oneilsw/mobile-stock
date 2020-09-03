@@ -65,11 +65,6 @@ const SignUp = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.titleContainer}>
-        <Image 
-          source={require('../../assets/cards.jpg')} 
-          style={styles.img}
-        />
-        <Text style={styles.title}>Big 2</Text>
       </View>
       <View style={styles.signup}>
         <TextInput placeholder="Email" value={email} onChangeText={text => setEmail(text)} />
@@ -95,7 +90,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: colors.red,
+    backgroundColor: colors.darkGrey,
   },
   titleContainer: {
     alignItems: 'center',
