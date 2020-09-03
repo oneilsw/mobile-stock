@@ -39,7 +39,7 @@ const Login = ({ navigation }) => {
           <TI placeholder="Password" value={password} onChangeText={text => setPassword(text)} textInputProps={{ secureTextEntry: true }} />
           <Button  title='LOG IN' onPress={handleLogin} width={width-50} />
           <TouchableOpacity style={{ margin: 15}} onPress={() => navigation.navigate('SignUp')}>
-            <Text style={{ fontFamily: 'Dosis', textDecorationLine: 'underline'}}>Don't have an account?
+            <Text style={{ fontFamily: 'Dosis', textDecorationLine: 'underline', color:colors.white}}>Don't have an account?
               <Text style={{ fontWeight: 'bold' }}> Sign Up</Text> 
             </Text>
           </TouchableOpacity>
@@ -54,14 +54,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: colors.darkGrey,
+    backgroundColor: colors.dark,
   },
   titleContainer: {
     alignItems: 'center',
     margin: 20
   },
   title: {
-    color: colors.yellow,
+    color: colors.white,
     fontSize: 42,
     fontFamily: 'Chelsea-Market'
   },

@@ -66,8 +66,8 @@ const styles = StyleSheet.create({
 })
 
 Button.defaultProps = {
-  backgroundColor: "red",
-  color: "yellow",
+  backgroundColor: "white",
+  color: "black",
   width: '50%',
   height: 45,
   margin: 5,

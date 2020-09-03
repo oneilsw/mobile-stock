@@ -73,13 +73,10 @@ const SignUp = ({ navigation }) => {
         <TextInput placeholder="Confirm Password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} textInputProps={{ secureTextEntry: true }} />
         <Button title='SIGN UP' onPress={handleSignup} width={width-50} />
         <TouchableOpacity style={{ margin: 15}} onPress={() => navigation.popToTop()}>
-          <Text style={{ fontFamily: 'Dosis', textDecorationLine: 'underline' }}>Already have an account?
+          <Text style={{ fontFamily: 'Dosis', textDecorationLine: 'underline', color: colors.white }}>Already have an account?
               <Text style={{ fontWeight: 'bold'}}> Sign In</Text> 
           </Text>
         </TouchableOpacity>
-          <Text  style={{top: 30, fontFamily: 'Dosis'}}>
-              By signing up, you agree to our Terms of Service and Private Policy 
-          </Text>
       </View>
     </View>
   );
@@ -90,21 +87,16 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: colors.darkGrey,
+    backgroundColor: colors.dark,
   },
   titleContainer: {
     alignItems: 'center',
     margin: 20
   },
   title: {
-    color: colors.yellow,
+    color: colors.white,
     fontSize: 42,
     fontFamily: 'Chelsea-Market'
-  },
-  img: {
-    width: 100,
-    height: 100,
-    borderRadius: 100 / 2
   },
   signup: {
     alignItems: 'center',
