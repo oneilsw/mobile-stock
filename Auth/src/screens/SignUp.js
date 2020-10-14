@@ -71,7 +71,7 @@ const SignUp = ({ navigation }) => {
         <TextInput placeholder="Username" value={username} onChangeText={text => setUsername(text)} />
         <TextInput placeholder="Password" value={password} onChangeText={text => setPassword(text)} textInputProps={{ secureTextEntry: true }} />
         <TextInput placeholder="Confirm Password" value={confirmPassword} onChangeText={text => setConfirmPassword(text)} textInputProps={{ secureTextEntry: true }} />
-        <Button title='SIGN UP' onPress={handleSignup} width={width-50} />
+        <Button title='VERIFY EMAIL' onPress={handleSignup} width={width-50} />
         <TouchableOpacity style={{ margin: 15}} onPress={() => navigation.popToTop()}>
           <Text style={{ fontFamily: 'Dosis', textDecorationLine: 'underline', color: colors.white }}>Already have an account?
               <Text style={{ fontWeight: 'bold'}}> Sign In</Text> 
